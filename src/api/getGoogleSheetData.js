@@ -13,7 +13,7 @@ import axios from "axios"; // Import the Axios library
  */
 export const getGoogleSheetData = async () => {
     try {
-        const response = await axios.get("http://localhost:5000/api/sheet"); // Send GET request to the Google Sheet endpoint
+        const response = await axios.get("https://revoeai-backend-2.onrender.com/api/sheet"); // Send GET request to the Google Sheet endpoint
         return response.data; // Return the response data
     } catch (error) {
         console.error("Error fetching Google Sheet data:", error); // Log the error
