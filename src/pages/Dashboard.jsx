@@ -55,7 +55,7 @@ const Dashboard = () => {
     
     const fetchDynamicData = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/getDynamicData");
+            const response = await fetch("https://revoeai-backend-2.onrender.com/api/getDynamicData");
             const data = await response.json();
             console.log("MongoDB Data:", data); // ✅ Debugging log
     
@@ -124,7 +124,7 @@ const Dashboard = () => {
   
       // Send the updated value to the backend
       try {
-          await fetch("http://localhost:5000/api/saveDynamicData", {
+          await fetch("https://revoeai-backend-2.onrender.com/api/saveDynamicData", {
               method: "POST",
               headers: {
                   "Content-Type": "application/json"
