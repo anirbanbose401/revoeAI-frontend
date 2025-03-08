@@ -7,7 +7,7 @@ import styles from "../style";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
-const socket = io("https://revoeai-backend-2.onrender.com");
+const socket = io("http://localhost:5000");
 
 const Dashboard = () => {
     const [tableData, setTableData] = useState([]);
